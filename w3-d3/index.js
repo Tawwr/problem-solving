@@ -11,6 +11,21 @@ target sum. */
 You can assume that there will be at most one pair of numbers summing up to
 the target sum. */
 
+//First Solution
+function twoNumberSum(array, targetSum) {
+    for (let i = 0; i < array.length; i++) {
+        const firstNum = array[i];
+        for (let j = i + 1; j < array.length; j++) {
+            const secondNum = array[j];
+            if (firstNum + secondNum === targetSum) {
+                return [firstNum, secondNum]
+            }
+        }
+        return []
+    }
+}
+
+//Second Solution
 function twoNumberSum(array, targetSum) {
     const obj ={}
     for (const num of array) {
