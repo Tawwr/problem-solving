@@ -5,10 +5,11 @@
 // in the array but that are in the same order as they appear in the array.
 
 function isValidSubsequence(array, sequence) {
+	let newArr = array;
 	for (const elem of sequence) {
-		const numIndex = array.indexOf(elem);
+		const numIndex = newArr.indexOf(elem);
 		if (numIndex >= 0) {
-			array.splice(numIndex + 1, 0);
+			newArr = newArr.slice(numIndex + 1);
 		} else {
 			return false;
 		}
