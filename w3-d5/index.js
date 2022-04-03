@@ -4,7 +4,18 @@
 //(when the array is read from left to right).
 
 
-firstDuplicate(array) {};
+function firstDuplicate(array) {
+    const obj = {}
+
+    for (const num in array) {
+        if (obj[num]) {
+            return num
+        } else {
+            obj[num] = true;
+        }
+    }
+    return null;
+};
 
 firstDuplicate([2, 1, 5, 2, 3, 4, 3]) //2
 firstDuplicate([5, 5, 3, 5, 3, 4, 3]) //5
