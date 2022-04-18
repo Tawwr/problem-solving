@@ -4,7 +4,7 @@
 function inserTionSort(array) {
 	for (let i = 1; i < array.length; i++) {
 		while (array[i] < array[i - 1]) {
-			let temp = array[i];
+			const temp = array[i];
 			array[i] = array[i - 1];
 			array[i - 1] = temp;
 			i--;
