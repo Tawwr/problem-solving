@@ -6,7 +6,8 @@ function randomize(array) {
 		temp,
 		randomIndx;
 	while (arrLength) {
-		randomIndx = Math.floor(Math.random() * arrLength--);
+		randomIndx = Math.floor(Math.random() * arrLength);
+		arrLength --
 		temp = array[arrLength];
 		array[arrLength] = array[randomIndx];
 		array[randomIndx] = temp;
