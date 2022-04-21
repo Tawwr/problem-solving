@@ -8,7 +8,7 @@
 // should return -1
 
 //Solution #1
-function firstNonRepeatingChar(string) {
+function firstNonRepeatingChar(string) { //'abccdbas'
 	for (let i = 0; i < string.length; i++) {
 		let repetitions = 0;
 		for (let j = 0; j < string.length; j++) {
@@ -18,6 +18,7 @@ function firstNonRepeatingChar(string) {
 	}
 	return -1;
 }
+
 
 //Solution #2
 function firstNonRepeatingChar(string) {
@@ -37,3 +38,6 @@ function firstNonRepeatingChar(string) {
 	}
 	return -1;
 }
+
+firstNonRepeatingChar('aabccdbs'); //5
+firstNonRepeatingChar('aabccddb'); //-1
