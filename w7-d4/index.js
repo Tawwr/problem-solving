@@ -11,14 +11,14 @@ function productExceptSelf(nums) {
         for (let j = i + 1; j < nums.length; j ++) {
             result *= nums[j]
         }
-        result = result * prevProd
+        result *= prevProd
         newArr.push(result)
         prevProd *= nums[i]
     }
     return newArr
 };
 
-//Solution #
+//Solution #2
 //O(n)
 function productExceptSelf(nums) {
     const prefix = []
@@ -34,6 +34,20 @@ function productExceptSelf(nums) {
     }
     for (let i = 0; i < nums.length; i ++) {
         newArr.push(prefix[i] * postfix[i])
+    }
+    return newArr
+}
+
+//Solution #3
+//O(n)
+function productExceptSelf(nums) {
+    const newArr = []
+    productOfAll = 1;
+    for (let i = 0; i < nums.length; i ++) {
+        productOfAll *= nums[i]
+    }
+    for (let i = 0; i < nums.length; i ++) {
+        newArr.push(productOfAll / nums[i])
     }
     return newArr
 }
