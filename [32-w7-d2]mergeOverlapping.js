@@ -10,6 +10,7 @@
 //  example, [1,5] and [6,7] are not overlapping. However, [1,6] and [6,7] are overlapping
 
 //mergeOverlapping([[1,3], [2,6], [8,10], [15,18]]) // [[1,6], [8,10], [15,18]]
+//mergeOverlapping([[1,2],[8,10], [2,6],  [9,18]]) // [[1,6], [8,18]]
 
 function mergeOverlapping(intervalsArray) {
   intervalsArray.sort((a, b) => a[0] - b[0])
