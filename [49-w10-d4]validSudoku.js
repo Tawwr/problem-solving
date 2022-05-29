@@ -52,17 +52,17 @@ function validSudoku(board) {
 				if (rowsObj[row] === undefined) rowsObj[row] = {};
 				if (colsObj[col] === undefined) colsObj[col] = {};
 				if (squareObj[(Math.floor(row / 3) * 3 + Math.floor(col / 3))] === undefined)
-					squareObj[Math.floor(row / 3) * 3+ Math.floor(col / 3)] = {};
+					squareObj[Math.floor(row / 3) * 3 + Math.floor(col / 3)] = {};
 				if (
 					board[row][col] in rowsObj[row] ||
 					board[row][col] in colsObj[col] ||
-					board[row][col] in squareObj[Math.floor(row / 3) * 3+ Math.floor(col / 3)]
+					board[row][col] in squareObj[Math.floor(row / 3) * 3 + Math.floor(col / 3)]
 				) {
 					return false;
-				}
+				}    
 				rowsObj[row][board[row][col]] = true;
 				colsObj[col][board[row][col]] = true;
-				squareObj[(Math.floor(row / 3) * 3+ Math.floor(col / 3))][
+				squareObj[(Math.floor(row / 3) * 3 + Math.floor(col / 3))][
 					board[row][col]
 				] = true;
 			
