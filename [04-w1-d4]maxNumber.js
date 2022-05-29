@@ -1,6 +1,6 @@
 //Problem: write a function that take an arrays of unsorted numbers nums and returns the
-//maximum number of the array.
-// Note that you are not allowed to sorted the array
+//largest number of the array.
+// Note that you are not allowed to sort the array
 //Example: maxNumber([5, 25, 10, 1, 3, 22]) // 25
 
 //Solution:
