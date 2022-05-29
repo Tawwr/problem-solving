@@ -31,10 +31,8 @@ function firstNonRepeatingChar(string) {
 			charDict[char]++;
 		}
 	}
-	for (const char of string) {
-		if (charDict[char] === 1) {
-			return string.indexOf(char);
-		}
+	for (let i = 0; i < string.length; i++) {
+		if (charDict[string[i]] === 1) return i;
 	}
 	return -1;
 }
