@@ -5,7 +5,7 @@
 
 function firstDuplicate(array) {
     const obj = {};
-	for (const num in array) {
+	for (const num of array) {
 		if (obj[num]) {
 			return num;
 		} else {
