@@ -8,8 +8,6 @@
 
 function capitalizeWords(str) {
 	strArr = str.split(' ');
-	capitalizedStr = strArr
-		.map(word => word[0].toUpperCase() + word.slice(1))
-		.join(' ');
+	const capitalizedStr = strArr.map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 	return capitalizedStr;
 }

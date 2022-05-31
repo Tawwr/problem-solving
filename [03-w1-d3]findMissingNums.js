@@ -19,3 +19,33 @@ function findMissingNums(arr) {
     }
 	return missingNums;
 }
+
+function findMissingNums(arr) {
+    const missingNums = [];
+    arr.sort((a, b) => a - b);
+    let l = arr[0]
+    let r = arr[arr.length - 1]
+    for (let i = l; i <= r; i++) {
+        if (!arr.includes(i)) {
+            missingNums.push(i)
+        }
+    }
+    return missingNums;
+}
+
+function findMissingNums(arr) {
+    let obj = {};
+    for (let i = 0; i < arr.length; i++) {
+        obj[arr[i]] = true;
+    }
+    let missingNums = [];
+    arr.sort((a, b) => a - b);
+    let l = arr[0]
+    let r = arr[arr.length - 1]
+    for (let i = l; i <= r; i++) {
+        if (!obj[i]) {
+            missingNums.push(i)
+        }
+    }
+    return missingNums;
+}

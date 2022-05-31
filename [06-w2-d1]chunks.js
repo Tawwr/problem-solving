@@ -7,8 +7,7 @@
 //with each array length is equal to the number (chunk size).
 //Examples:
 //chunks([1,2,3,4,5], 2) //return [[1,2], [3,4], [5]]
-//chunks([3,7,8,1,2,4,10,13,12], 3) //return [[3,7,8], [1,2,4], 
-//[10,13,12]]
+//chunks([3,7,8,1,2,4,10,13,12], 3) //return [[3,7,8], [1,2,4], [10,13,12]]
 //chunks([1,2,3,4,5], 8) //return [[1,2,3,4,5]]
 
 //solutions:

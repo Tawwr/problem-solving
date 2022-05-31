@@ -1,4 +1,4 @@
-//Problem: Giver a string, return a new string with a reversed order of characters.
+//Problem: Given a string, return a new string with a reversed order of characters.
 //Example: 
 //reverseString('hello') // 'olleh'
 
