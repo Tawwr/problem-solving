@@ -36,6 +36,6 @@ function generateDocument(chars, doc) {
 
 generateDocument("abcabc", "aabbccc"); // false
 generateDocument("A", "a"); // false
-generateDocument("ahuhuesyeye7", ""); // true
+generateDocument("how", ""); // true
 generateDocument("helloworld", "hello world"); // false
 
