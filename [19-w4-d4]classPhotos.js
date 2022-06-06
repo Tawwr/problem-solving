@@ -30,7 +30,6 @@ function classPhotos(redShirtHeights, blueShirtHeights) {
 				return false;
 			}
 		}
-
 		return true;
 	} else if (redShirtHeights[0] < blueShirtHeights[0]) {
 		for (let i = 0; i < blueShirtHeights.length; i++) {
@@ -41,7 +40,6 @@ function classPhotos(redShirtHeights, blueShirtHeights) {
 				return false;
 			}
 		}
-
 		return true;
 	} else {
 		return false;
