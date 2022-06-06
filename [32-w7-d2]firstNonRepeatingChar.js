@@ -8,7 +8,7 @@
 // should return -1
 
 //Solution #1
-function firstNonRepeatingChar(string) { //'abccdbas'
+function firstNonRepeatingChar(string) {
 	for (let i = 0; i < string.length; i++) {
 		let repetitions = 0;
 		for (let j = 0; j < string.length; j++) {
@@ -23,7 +23,6 @@ function firstNonRepeatingChar(string) { //'abccdbas'
 //Solution #2
 function firstNonRepeatingChar(string) {
 	const charDict = {};
-
 	for (const char of string) {
 		if (!(char in charDict)) {
 			charDict[char] = 1;
