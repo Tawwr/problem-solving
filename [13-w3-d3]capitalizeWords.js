@@ -1,7 +1,7 @@
 //Learning: array map, join. String split
 
-//problem: Write a function that takes a string argument and return the same string
-//with capitalized words.
+	//problem: Write a function that takes a string argument and return the same string
+	//with capitalized words.
 //Examples:
 //capitalizeWords('a program'); return 'A Program'
 //capitalizeWords('city of angels'); return 'City Of Angels'
