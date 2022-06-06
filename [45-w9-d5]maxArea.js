@@ -1,4 +1,4 @@
-// You are given an integer array height of length n.
+// You are given an integer array height of length heights.
 //There are n vertical lines drawn such that the two endpoints of
 //the ith line are (i, 0) and (i, height[i]).
 // Find two lines that together with the x-axis form a container,
@@ -13,7 +13,6 @@ function maxArea(heights) {
 	let area = 0;
 	let max = 0;
 	while (l < r) {
-		//let minHeight = heights[l] < heights[r] ? heights[l] : heights[r];
     let minHeight = Math.min(heights[l], heights[r])
 		area = (r - l) * minHeight;
 		if (area > max) max = area;
