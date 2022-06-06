@@ -15,5 +15,5 @@ function randomize(array) {
 	return array;
 }
 
-randomize([1, 2, 3, 4, 5]); //randomized array
-randomize([1, 2, 3, 4, 5]); //randomized array
+randomize([1, 2, 3, 4, 5]); //[4, 2, 3, 1, 5]
+randomize([1, 2, 3, 4, 5]); //[2, 3, 1, 5, 4]
